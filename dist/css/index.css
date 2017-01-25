@@ -1576,7 +1576,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 code {
     padding: 2px 4px;
@@ -15417,7 +15417,7 @@ Copyright (c) 2015 Daniel Eden
 
 header.site-header.site-header {
     z-index: 1000;
-    background: transparent;
+    background: #46256F;
     font-size: 14px;
     position: static;
 }
@@ -15430,6 +15430,8 @@ header.site-header.site-header a {
 }
 header.site-header.site-header li * {
     -webkit-backface-visibility: hidden !important;
+    color: #fff;
+    font-size: 32px;
 }
 header.site-header.site-header .navbar-header {
     margin-right: -15px;
@@ -15470,13 +15472,14 @@ header.site-header.site-header nav .navbar-brand {
     width: 120px;
 }
 header.site-header.site-header nav .navbar-brand a {
-    background: url("../images/senodio.png") center left no-repeat;
+    background: url("../images/bindoc_logo.png") center left no-repeat;
     /*background-size: 76%;*/
     width: 130px;
     height: 40px;
     display: block;
     margin-top: 5px;
     background-size: 48%;
+    display: none;
 }
 header.site-header.site-header nav .navbar-brand img {
     position: relative;
@@ -15904,12 +15907,12 @@ a.btn.btn-danger {
 }
 .btn.btn-primary,
 a.btn.btn-primary {
-    background-color: #44c7f4;
+    background-color: #46256F;
     border-color: transparent;
 }
 .btn.btn-primary:hover,
 a.btn.btn-primary:hover {
-    background-color: #0c9dce;
+    background-color: #7958A2;
 }
 .btn:active,
 a.btn:active {
@@ -16041,7 +16044,7 @@ body {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #4d4d4d;
 }
 h1,
@@ -16050,7 +16053,7 @@ h3,
 h4,
 h5 {
     line-height: 1.5;
-    font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #000;
     font-weight: 400;
 }

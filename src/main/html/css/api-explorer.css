@@ -16,7 +16,7 @@
 }
 
 .swagger-section pre .addition, .swagger-section pre .aggregate, .swagger-section pre .apache .cbracket, .swagger-section pre .apache .tag, .swagger-section pre .bash .variable, .swagger-section pre .constant, .swagger-section pre .django .variable, .swagger-section pre .erlang_repl .function_or_atom, .swagger-section pre .flow, .swagger-section pre .markdown .header, .swagger-section pre .parent, .swagger-section pre .preprocessor, .swagger-section pre .ruby .symbol, .swagger-section pre .ruby .symbol .string, .swagger-section pre .rules .value, .swagger-section pre .rules .value .number, .swagger-section pre .smalltalk .class, .swagger-section pre .stream, .swagger-section pre .string, .swagger-section pre .tag .value, .swagger-section pre .template_tag, .swagger-section pre .tex .command, .swagger-section pre .tex .special, .swagger-section pre .title {
-    color: #00fcd4
+    color: #F58D25;
 }
 
 .swagger-section pre .annotation, .swagger-section pre .chunk, .swagger-section pre .comment, .swagger-section pre .diff .header, .swagger-section pre .markdown .blockquote, .swagger-section pre .template_comment {
@@ -24,7 +24,7 @@
 }
 
 .swagger-section pre .change, .swagger-section pre .date, .swagger-section pre .go .constant, .swagger-section pre .literal, .swagger-section pre .markdown .bullet, .swagger-section pre .markdown .link_url, .swagger-section pre .number, .swagger-section pre .regexp, .swagger-section pre .smalltalk .char, .swagger-section pre .smalltalk .symbol, .swagger-section pre .tag {
-    color: #44c7f4
+    color: #3F9833;
 }
 
 .swagger-section pre .apache .sqbracket, .swagger-section pre .array, .swagger-section pre .attr_selector, .swagger-section pre .clojure .attribute, .swagger-section pre .coffeescript .property, .swagger-section pre .decorator, .swagger-section pre .deletion, .swagger-section pre .doctype, .swagger-section pre .envvar, .swagger-section pre .erlang_repl .reserved, .swagger-section pre .filter .argument, .swagger-section pre .important, .swagger-section pre .javadoc, .swagger-section pre .label, .swagger-section pre .localvars, .swagger-section pre .markdown .link_label, .swagger-section pre .nginx .built_in, .swagger-section pre .pi, .swagger-section pre .prompt, .swagger-section pre .pseudo, .swagger-section pre .ruby .string, .swagger-section pre .shebang, .swagger-section pre .tex .formula, .swagger-section pre .vhdl .attribute {
@@ -48,7 +48,7 @@
 @media (min-width: 992px) {
     .swagger-section #resources:before {
         content: "";
-        background: #5c666f;
+        background: #7958A2;
         height: 100%;
         width: 50%;
         top: 0;
@@ -109,7 +109,7 @@
 .swagger-section h2.operation-title {
     display: block;
     float: none;
-    color: #333;
+    color: #46256F;
     padding: 0;
     font-size: 25px;
     line-height: 1.3;
@@ -212,10 +212,13 @@
 
 .swagger-section .parameter-item {
     min-width: 320px;
-    background: #f8f8f9;
-    color: #5c666f;
+    background: #fff;
+    color: rgba(0,0,0,0.54);
     font-size: 14px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 .swagger-section .parameter-item .small-description {
@@ -376,20 +379,21 @@
 }
 
 .swagger-section .operations .model-signature .description {
-    background: #5c666f;
+    background: #46256F;
     padding-bottom: 15px;
     color: #fff
 }
 
 @media (min-width: 992px) {
     .swagger-section .operations .model-signature .description {
-        background: #4e575e
+        background: #46256F;
     }
 }
 
 .swagger-section .operations .model-signature .description > div {
     margin: 0;
-    padding: 15px 20px
+    padding: 15px 20px;
+    background: #764DAA;
 }
 
 .swagger-section .operations .model-signature .description > div:after {
@@ -418,7 +422,7 @@
 }
 
 .swagger-section .operations .model-signature .description .objectName {
-    background: #535c64;
+    background: #46256F;
     display: block;
     font-weight: 700;
     padding: 20px
@@ -426,7 +430,7 @@
 
 @media (min-width: 992px) {
     .swagger-section .operations .model-signature .description .objectName {
-        background: #576169;
+        background: #46256F;
         font-size: 13px;
         padding: 10px 30px;
         margin-top: 15px
@@ -545,7 +549,7 @@
 }
 
 .swagger-section pre {
-    background: #4e575e;
+    background: #46256F;
     margin: 0;
     word-wrap: break-word !important;
     max-height: none;
@@ -1387,7 +1391,9 @@
 }
 
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif !important;
+
 }
 
 #api2-explorer .btn {
@@ -1395,7 +1401,7 @@ body {
 }
 
 #api2-explorer code.json {
-    font-size: 12px
+    font-size: 1.2em;
 }
 
 #api2-explorer a.toggle-samples {
@@ -1648,13 +1654,13 @@ body {
 
 .swagger-section .swagger-ui-wrap {
     line-height: 1;
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: auto;
     margin-right: auto
 }
 
 .swagger-section .swagger-ui-wrap b, .swagger-section .swagger-ui-wrap strong {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700
 }
 
@@ -1795,7 +1801,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap .model-signature {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     line-height: 1.5em
 }
@@ -1850,7 +1856,7 @@ body {
     font-size: 1.5em;
     line-height: 1.3em;
     padding: 10px 0;
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700
 }
 
@@ -1887,7 +1893,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap form.formtastic fieldset.inputs ol li.text textarea {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: 250px;
     padding: 4px;
     display: block;
@@ -1967,7 +1973,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap ul#resources {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: .9em
 }
 
@@ -2154,7 +2160,7 @@ body {
     padding: 10px 0;
     font-size: .8em;
     border-top: 1px solid #ddd;
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #999;
     font-style: italic
 }
@@ -2171,7 +2177,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap .markdown ol, .swagger-section .swagger-ui-wrap .markdown ul {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 5px 0 10px;
     padding: 0 0 0 18px;
     list-style-type: disc
@@ -2361,7 +2367,7 @@ body {
     font-size: 1.5em;
     font-weight: 700;
     text-decoration: none;
-    background: url(../images/logo_small.png) left center no-repeat;
+    background: url(../images/bindoc_logo.png) left center no-repeat;
     padding: 20px 0 20px 40px;
     color: #fff
 }
